@@ -28,8 +28,14 @@ window.addEventListener('load', function () {
   
   const startTheGame = () => alert("Guess the country by its capital!");
   
-  const wordTrim = () => guess = guess.trim().replace(/\s+/g, " ").toLowerCase();
-  
+  const wordTrim = () => {
+    if (typeof guess === "string") {
+      guess = guess.trim().replace(/\s+/g, " ").toLowerCase();
+    } else {
+      guess = "";
+    }   
+  }
+
   const isValidInput = (input) => /^[\p{L}\s\-]+$/u.test(input);
   
   startTheGame();
