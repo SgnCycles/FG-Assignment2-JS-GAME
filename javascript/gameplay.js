@@ -18,14 +18,6 @@ window.addEventListener('load', function () {
     }
   }
   
-  const cancelGame = () => {
-    if (guess === null) {
-      alert("Game is cancelled!");
-      isPlaying = false;
-      return;
-    } 
-  }
-  
   const startTheGame = () => alert("Guess the country by its capital!");
   
   const wordTrim = () => guess = guess.trim().replace(/\s+/g, " ").toLowerCase();
@@ -45,8 +37,13 @@ window.addEventListener('load', function () {
       
       guess = prompt(`The capital of this country is ${currentCountry.capital}.\n\nWhat country is this?${guessedLettersResponse}\n\nAttempts: ${attemptsLeft}. Lives: ${lives}. Score: ${score}`);
   
-      cancelGame();
-      wordTrim();
+      if (guess === null) {
+        alert("Game is cancelled");
+        isPlaying = false;
+        break;
+      }
+
+      guess = wordTrim(guess);
   
       if (!isValidInput(guess)) {
         alert("Please input only letters!");
