@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Pixellari";
+  src: url("../fonts/Pixellari/Pixellari.woff2") format("woff2"),
+      url("../fonts/Pixellari/Pixellari.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixellari";
+  src: url("/fonts/Pixellari/Pixellari.woff2") format("woff2"),
+      url("/fonts/Pixellari/Pixellari.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/fonts/Press_Start_2P/PressStart2P-Regular.woff2") format("woff2"),
+      url("/fonts/Press_Start_2P/PressStart2P-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/Silkscreen/Silkscreen-Bold.woff2") format("woff2"),
+      url("/fonts/Silkscreen/Silkscreen-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/Silkscreen/Silkscreen-Regular.woff2") format("woff2"),
+      url("/fonts/Silkscreen/Silkscreen-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

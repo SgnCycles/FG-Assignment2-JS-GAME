@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
+  font-family: "Press Start 2P", monospace, sans-serif;
 }
 
 .main-content {
@@ -43,4 +44,5 @@ body {
   color: white;
   padding: 50px;
   text-align: center;
+  font-size: 1.2rem;
 }
