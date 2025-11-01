@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("/images/game_background.png");
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.frontpage-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.frontpage-image {
+  max-height: 500px;
+  min-width: 100px;
+}
+
+.footer {
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
