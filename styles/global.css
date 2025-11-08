@@ -16,6 +16,7 @@ body {
   background-position: center;
   width: 100%;
   font-family: "Press Start 2P", monospace, sans-serif;
+  color: white;
 }
 
 .main-content {
@@ -25,6 +26,10 @@ body {
   align-items: center;
   width: 100%;
   flex-grow: 1;
+}
+
+.main-content p {
+  font-size: 1.7rem;
 }
 
 .frontpage-content {

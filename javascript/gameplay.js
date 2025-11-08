@@ -6,8 +6,8 @@ window.addEventListener('load', function () {
   let attemptsLeft;
   let remainingCountries = Array.from(COUNTRIES);
   let currentCountry;
-  let countryLetter;
   let allMatchingLetters = [];
+  let countryLetter;
   let guess;
   
   const RandomCountry = () => {
@@ -20,9 +20,9 @@ window.addEventListener('load', function () {
   
   const startTheGame = () => alert("Guess the country by its capital!");
   
-  const wordTrim = () => guess = guess.trim().replace(/\s+/g, " ").toLowerCase();
+  const wordTrim = (guess) => guess.trim().replace(/\s+/g, " ").toLowerCase();
 
-  const isValidInput = (input) => /^[\p{L}\s\-]+$/u.test(input);
+  const isValidInput = input => /^[\p{L}\s\-]+$/u.test(input);
   
   startTheGame();
   
@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
   
     while (attemptsLeft > 0) {
   
-      let guessedLettersResponse = allMatchingLetters.length > 0 ? `\n\nYou have already guessed: ${allMatchingLetters}.` : "";
+      let guessedLettersResponse = allMatchingLetters.length > 0 ? `\n\nYou have already guessed: ${allMatchingLetters.join(", ").toUpperCase()}.` : "";
       
       guess = prompt(`The capital of this country is ${currentCountry.capital}.\n\nWhat country is this?${guessedLettersResponse}\n\nAttempts: ${attemptsLeft}. Lives: ${lives}. Score: ${score}`);
   
