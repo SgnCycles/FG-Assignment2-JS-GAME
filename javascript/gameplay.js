@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
   let guess;
   
   const RandomCountry = () => {
-    let randomIndex = [Math.floor(Math.random() * remainingCountries.length)];
+    let randomIndex = Math.floor(Math.random() * remainingCountries.length);
     currentCountry = remainingCountries[randomIndex];
     for (let i = 0; i <currentCountry.length; i++) {
       countryLetter = currentCountry[i].toLowerCase();
